@@ -102,10 +102,12 @@
 	<div id="home_body_crim" data-role="content" style="text-align:left;">	
 			<ul data-role="listview">
 				<li class="crim"><a href="#duty">Duty Day Resources</a></li>
+				<li class="civ"><a href="#court">Court Rules, Standing Orders &amp; Info</a></li>
 				<li><a href="#guides">Resources &amp; Guides</a></li>
 				<li><a href="#rules">Statutes, Cases, Rules et al.</a></li>
 				<li class="civ"><a href="#interact">Tools</a></li>		
 				<li><a href="#gloss">Tables, Lists &amp; Glossaries</a></li>
+
 				<li><a href="#dir">Directories</a></li>
 				<!--<li><a href="#applications">Legal App Roundup</a></li> -->
 				<li><a href="updates.html" onClick="createCookie('updates',updates_now,36500);">Updates<span class="ui-li-count"><script type="text/javascript">document.write(updates_unseen);</script></span></a></li>
@@ -452,8 +454,6 @@
 	</div>
 	<div id="gloss_body" data-role="content" style="text-align:left;">	
 		<ul data-role="listview" data-filter="true" data-filter-placeholder="Search Titles..." data-filter-theme="c" data-theme="c" data-divider-theme="b">
-				<li class="civ"><a href="#daily">Daily Lists</a></li>
-				<li class="civ"><a href="#assign">Judicial Assignments</a></li>
 				<li><a href="#dispo">Disposition Codes</a></li>
 				<li class="civ"><a href= "https://ucsd.libguides.com/govspeak"> Goverment Abbreviations</a></li>
 				<li class="civ"><a href= "https://www.masslegalhelp.org/housing/finding-public-and-subsidized-housing/glossary.pdf">Legal Tactics: Finding Public and Subsidized Housing Glossary</a>
@@ -467,23 +467,20 @@
  	</div><!-- /content -->
 </div><!-- /#gloss -->
 
-<!-- Start of first page: #guides -->
-<div data-role="page" id="guides">
+<!-- Start of first page: #court -->
+<div data-role="page" id="court">
 	<div data-role="header" data-position="fixed" data-theme="b">
 		<a href="#home" data-rel="back" data-iconpos="notext" data-icon="arrow-l" data-direction="reverse"></a>
-		<h1>Resources</h1>
-		<a href="#about_guides" data-iconpos="notext" data-theme="c" data-icon="info" data-transition="slideup"></a>
-			</div>
-	<div id="gloss_body" data-role="content" style="text-align:left;">	
+		<h1>Court Rules, Standing Orders &amp; Info</h1>
+		<a href="#about_court" data-iconpos="notext" data-theme="c" data-icon="info" data-transition="slideup"></a>
+
+	</div>
+	<div id="court_body" data-role="content" style="text-align:left;">	
 		<ul data-role="listview" data-filter="true" data-filter-placeholder="Search Titles..." data-filter-theme="c" data-theme="c" data-divider-theme="b">
-			<li class="crim"data-role="list-divider">Aids</li>
-			<li class="crim"><a href="https://www.suffolk.edu/law/faculty-research/faculty/faculty-forms-and-resources/massachusetts-criminal-practice">MA Criminal Practice</a></li>
-			<li data-role="list-divider">Guides</li>
-			<li><a href="https://suffolklitlab.org/resources/">LIT Lab Resource Finder App</a></li>
+			<li class="civ"data-role="list-divider">Info</li>
+			<li class="civ"><a href="#daily">Daily Lists</a></li>
+			<li class="civ"><a href="#assign">Judicial Assignments</a></li>
 			<li><a href="http://www.mass.gov/courts/case-legal-res/guidelines/mass-guide-to-evidence/">Guide to Evidence</a></li>
-			<li class="civ"><a href="#caflprac">Children and Families</a></li>
-			<li class="civ"><a href="#mhprac">Mental Health</a></li> 
-			<li><a href="https://www.mass.gov/info-details/well-being-and-technical-assistance-for-lawyers-during-covid-19">Wellbeing and Technical Assistance for Lawyers</a></li>
 			<li class="civ"data-role="list-divider">Remote/Virtual Court Services</li>
 			<li class="civ"><a href="https://www.mass.gov/info-details/remotevirtual-court-services#housing-court-virtual-front-counter-">Housing Court Virtual Front Counter</a></li> 
 			<li class="civ"><a href="https://www.mass.gov/info-details/remotevirtual-court-services#probate-&-family-court-virtual-registries-">Probate and Family Court Virtual Registries</a></li> 
@@ -501,6 +498,27 @@
 			<li class="civ"><a href="https://www.mass.gov/law-library/special-rules-of-the-district-court-of-massachusetts">Special Rules of the District Court</a></li>
 			<li class="civ"><a href="https://www.mass.gov/law-library/massachusetts-trial-court-rules">Trial Court</a></li>
 			<li class="civ"><a href="https://www.mass.gov/law-library/massachusetts-superior-court-rules">Superior Court</a></li>
+				
+		</ul>
+ 	</div><!-- /content -->
+</div><!-- /#court -->
+
+<!-- Start of first page: #guides -->
+<div data-role="page" id="guides">
+	<div data-role="header" data-position="fixed" data-theme="b">
+		<a href="#home" data-rel="back" data-iconpos="notext" data-icon="arrow-l" data-direction="reverse"></a>
+		<h1>Resources</h1>
+		<a href="#about_guides" data-iconpos="notext" data-theme="c" data-icon="info" data-transition="slideup"></a>
+			</div>
+	<div id="gloss_body" data-role="content" style="text-align:left;">	
+		<ul data-role="listview" data-filter="true" data-filter-placeholder="Search Titles..." data-filter-theme="c" data-theme="c" data-divider-theme="b">
+			<li class="crim"data-role="list-divider">Aids</li>
+			<li class="crim"><a href="https://www.suffolk.edu/law/faculty-research/faculty/faculty-forms-and-resources/massachusetts-criminal-practice">MA Criminal Practice</a></li>
+			<li class="civ"><a href="https://suffolklitlab.org/resources/">LIT Lab Resource Finder App</a></li>
+			<li data-role="list-divider">Guides</li>
+			<li class="civ"><a href="#caflprac">Children and Families</a></li>
+			<li class="civ"><a href="#mhprac">Mental Health</a></li> 
+			<li><a href="https://www.mass.gov/info-details/well-being-and-technical-assistance-for-lawyers-during-covid-19">Wellbeing and Technical Assistance for Lawyers</a></li>
 			<!--<li class="crim"><a href="#jury">Model Jury Instructions</a></li> -->
 			<!--<li class="crim"><a href="#massprac">MA Criminal Practice</a></li> -->
 			<!--<li class="crim"><a href="#yad">Criminal Practice (YAD)</a></li-->
@@ -1615,6 +1633,21 @@ New Bedford, Orleans, Plymouth, Wareham.</p></a></li>
 	</div><!-- /content -->
 </div><!-- /#about_interact -->
 
+<!-- Start of first page: #about_court -->
+<div data-role="page" id="about_court">
+	<div data-role="header" data-position="fixed" data-theme="b">
+		<a href="#court" data-rel="back" data-iconpos="notext" data-icon="arrow-d"  data-transition="slideup" data-direction="reverse"></a>
+		<h1>About</h1>
+	</div>
+	<div id="about_v" data-role="content" style="text-align:left;">	
+		<b>Court Rules, Standing Orders &amp; Info</b>
+		<p>This section contains individual direct links to Court Rules, Standing Orders, the Mass.gov Guide to Evidence, daily lists, and other resources to inform your day-of court experience. <em>Links valid as of 2021-10-13</em>.</p>		
+<p><b>Suggestions</b></p>
+		<p>We are always looking to improve the content presented here. If you have any suggestions or concerns, please let us know by emailing the curator.</p>
+		<p><a href="mailto:litlab@suffolk.edu?subject=Court" target="_top" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c" data-bitly-type="bitly_hover_card"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Email Curator</span></span></a></p>
+		<p><a href="#disclaim" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c" data-bitly-type="bitly_hover_card"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Disclaimer</span></span></a></p>
+	</div><!-- /content -->
+</div><!-- /#about_court -->
 
 <!-- Start of first page: #about_rules -->
 <div data-role="page" id="about_rules">
